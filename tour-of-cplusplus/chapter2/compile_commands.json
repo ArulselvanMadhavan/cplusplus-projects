@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/arul.madhavan/dev/cplusplus-projects/tour-of-cplusplus/chapter2",
+  "command": "/usr/local/opt/llvm/bin/clang++   -std=gnu++17 -o CMakeFiles/Chapter2.dir/union.cc.o -c /Users/arul.madhavan/dev/cplusplus-projects/tour-of-cplusplus/chapter2/union.cc",
+  "file": "/Users/arul.madhavan/dev/cplusplus-projects/tour-of-cplusplus/chapter2/union.cc"
+}
+]

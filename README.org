@@ -1,0 +1,18 @@
+* Collection of Projects on C++
+** Compiler
+   - LLVM
+     #+BEGIN_SRC C++
+     clang++ <filename>
+     #+END_SRC
+   - Emacs works with eglot and clangd
+     #+begin_example
+     https://clangd.llvm.org/installation.html
+     #+end_example
+** Project Boilerplate
+   - https://github.com/bsamseth/cpp-project
+** CMake
+   #+begin_src bash
+   mkdir build; cd build
+   cmake -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Debug ../
+   #+end_src
+
