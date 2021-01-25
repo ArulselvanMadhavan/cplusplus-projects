@@ -70,6 +70,7 @@ target_enable_lto(main optimized)  # enable link-time-optimization if available 
 
 # Add an executable for file app/a1.cpp
 add_executable(a1 app/a1.cpp)
+add_executable(a9 app/a9.cpp)
 
 # Set the properties you require, e.g. what C++ standard to use. Here applied to library and main (change as needed).
 set_target_properties(
