@@ -1,0 +1,20 @@
+* Raspberry
+  #+BEGIN_SRC bash
+  qemu-system-arm -M versatilepb -dtb versatile-pb.dtb -cpu arm1176 -kernel kernel-qemu-4.14.79-stretch -m 256 -drive file=2019-07-10-raspbian-buster-lite.img,format=raw -append "rw console=ttyAMA0 rootfstype=ext4 root=/dev/sda2 loglevel=8" -net user,hostfwd=tcp::22023-:22,hostfwd=tcp::9090-:9090 -net nic -serial stdio
+  #+END_SRC
+
+* Docker
+  #+BEGIN_SRC bash
+  docker pull ubuntu:bionic
+  sudo docker run -ti -v ~/dev/cpp-projects/embedded/modern-cpp/chapter2:/mnt ubuntu:bionic
+  #+END_SRC
+
+* Ubuntu
+  #+BEGIN_SRC bash
+  apt install -y ssh
+  #+END_SRC
+
+* Transfer
+  #+BEGIN_SRC bash
+  scp -P 22023 hello pi@192.168.1.32:~/
+  #+END_SRC
