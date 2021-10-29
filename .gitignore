@@ -42,3 +42,5 @@ CMakeCache.txt
 # bin
 *.bin
 **/build/*
+
+**/.clangd/*

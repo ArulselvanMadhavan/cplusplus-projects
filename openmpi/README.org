@@ -5,3 +5,12 @@
 MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 MPI_Comm_size(MPI_COMM_WORLD, &nprocs);
 #+END_SRC
+** Message
+   - Pointer to memory
+   - Count
+   - Type
+** Address
+   - Rank
+   - Tag
+   - Communication group
+** 
