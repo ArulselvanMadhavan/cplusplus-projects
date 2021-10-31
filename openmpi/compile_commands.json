@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/arul/dev/cpp-projects/openmpi/build",
+  "command": "/usr/bin/cc  -I/usr/include/x86_64-linux-gnu/mpich    -o CMakeFiles/SynchronizedTimer.dir/SynchronizedTimer.c.o   -c /home/arul/dev/cpp-projects/openmpi/SynchronizedTimer.c",
+  "file": "/home/arul/dev/cpp-projects/openmpi/SynchronizedTimer.c"
+},
+{
+  "directory": "/home/arul/dev/cpp-projects/openmpi/build",
   "command": "/usr/bin/cc  -I/usr/include/x86_64-linux-gnu/mpich    -o CMakeFiles/FileRead.dir/FileRead.c.o   -c /home/arul/dev/cpp-projects/openmpi/FileRead.c",
   "file": "/home/arul/dev/cpp-projects/openmpi/FileRead.c"
 },

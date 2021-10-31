@@ -20,6 +20,7 @@ add_new(MinWorkExample MinWorkExample.c)
 add_new(SendRecv SendRecv.c)
 add_new(GlobalSums globalsums.c)
 add_new(FileRead FileRead.c)
+add_new(SynchronizedTimer SynchronizedTimer.c)
 
 enable_testing()
 
