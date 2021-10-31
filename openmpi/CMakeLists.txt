@@ -18,7 +18,8 @@ endfunction()
 
 add_new(MinWorkExample MinWorkExample.c)
 add_new(SendRecv SendRecv.c)
-
+add_new(GlobalSums globalsums.c)
+add_new(FileRead FileRead.c)
 
 enable_testing()
 
@@ -33,7 +34,14 @@ add_custom_target(distclean
   COMMAND rm -rf CMakeCache.txt CMakeFiles Makefile cmake_install.cmake CTestTestfile.cmake Testing)
 
 add_custom_command(
-        TARGET SendRecv POST_BUILD
+  TARGET FileRead PRE_BUILD
+  COMMAND ${CMAKE_COMMAND} -E copy
+  ${CMAKE_SOURCE_DIR}/file.in
+  ${CMAKE_CURRENT_BINARY_DIR}/file.in
+  )
+
+add_custom_command(
+        TARGET FileRead POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy
         ${CMAKE_CURRENT_BINARY_DIR}/compile_commands.json
 	${CMAKE_SOURCE_DIR}/compile_commands.json
