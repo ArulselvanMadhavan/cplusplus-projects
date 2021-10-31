@@ -6,6 +6,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(MPI REQUIRED)
 
+add_library(timer timer.c)
+
 function (add_new exec_name file)
   add_executable(${exec_name} ${file})
   target_include_directories(${exec_name}
@@ -13,7 +15,8 @@ function (add_new exec_name file)
   target_compile_options(${exec_name}
     PRIVATE ${MPI_C_COMPILE_FLAGS})
   target_link_libraries(${exec_name}
-    ${MPI_C_LIBRARIES} ${MPI_C_LINK_FLAGS})
+    ${MPI_C_LIBRARIES} ${MPI_C_LINK_FLAGS} "m" timer)
+  # target_link_libraries(${exec_name} PRIVATE "m")
 endfunction()
 
 add_new(MinWorkExample MinWorkExample.c)

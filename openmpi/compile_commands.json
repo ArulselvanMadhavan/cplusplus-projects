@@ -23,5 +23,10 @@
   "directory": "/home/arul/dev/cpp-projects/openmpi/build",
   "command": "/usr/bin/cc  -I/usr/include/x86_64-linux-gnu/mpich    -o CMakeFiles/MinWorkExample.dir/MinWorkExample.c.o   -c /home/arul/dev/cpp-projects/openmpi/MinWorkExample.c",
   "file": "/home/arul/dev/cpp-projects/openmpi/MinWorkExample.c"
+},
+{
+  "directory": "/home/arul/dev/cpp-projects/openmpi/build",
+  "command": "/usr/bin/cc     -o CMakeFiles/timer.dir/timer.c.o   -c /home/arul/dev/cpp-projects/openmpi/timer.c",
+  "file": "/home/arul/dev/cpp-projects/openmpi/timer.c"
 }
 ]
