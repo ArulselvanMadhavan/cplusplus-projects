@@ -7,6 +7,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 find_package(MPI REQUIRED)
 
 add_library(timer timer.c)
+add_library(malloc2D malloc2D.c)
 
 function (add_new exec_name file)
   add_executable(${exec_name} ${file})
@@ -15,7 +16,7 @@ function (add_new exec_name file)
   target_compile_options(${exec_name}
     PRIVATE ${MPI_C_COMPILE_FLAGS})
   target_link_libraries(${exec_name}
-    ${MPI_C_LIBRARIES} ${MPI_C_LINK_FLAGS} "m" timer)
+    ${MPI_C_LIBRARIES} ${MPI_C_LINK_FLAGS} "m" timer malloc2D)
   # target_link_libraries(${exec_name} PRIVATE "m")
 endfunction()
 
@@ -24,6 +25,7 @@ add_new(SendRecv SendRecv.c)
 add_new(GlobalSums globalsums.c)
 add_new(FileRead FileRead.c)
 add_new(SynchronizedTimer SynchronizedTimer.c)
+add_new(GhostExchange GhostExchange.cc)
 
 enable_testing()
 

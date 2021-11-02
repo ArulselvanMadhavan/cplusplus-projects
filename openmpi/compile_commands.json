@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/arul/dev/cpp-projects/openmpi/build",
+  "command": "/usr/bin/c++   -I/usr/include/x86_64-linux-gnu/mpich    -o CMakeFiles/GhostExchange.dir/GhostExchange.cc.o -c /home/arul/dev/cpp-projects/openmpi/GhostExchange.cc",
+  "file": "/home/arul/dev/cpp-projects/openmpi/GhostExchange.cc"
+},
+{
+  "directory": "/home/arul/dev/cpp-projects/openmpi/build",
   "command": "/usr/bin/cc  -I/usr/include/x86_64-linux-gnu/mpich    -o CMakeFiles/SynchronizedTimer.dir/SynchronizedTimer.c.o   -c /home/arul/dev/cpp-projects/openmpi/SynchronizedTimer.c",
   "file": "/home/arul/dev/cpp-projects/openmpi/SynchronizedTimer.c"
 },
@@ -23,6 +28,11 @@
   "directory": "/home/arul/dev/cpp-projects/openmpi/build",
   "command": "/usr/bin/cc  -I/usr/include/x86_64-linux-gnu/mpich    -o CMakeFiles/MinWorkExample.dir/MinWorkExample.c.o   -c /home/arul/dev/cpp-projects/openmpi/MinWorkExample.c",
   "file": "/home/arul/dev/cpp-projects/openmpi/MinWorkExample.c"
+},
+{
+  "directory": "/home/arul/dev/cpp-projects/openmpi/build",
+  "command": "/usr/bin/cc     -o CMakeFiles/malloc2D.dir/malloc2D.c.o   -c /home/arul/dev/cpp-projects/openmpi/malloc2D.c",
+  "file": "/home/arul/dev/cpp-projects/openmpi/malloc2D.c"
 },
 {
   "directory": "/home/arul/dev/cpp-projects/openmpi/build",
