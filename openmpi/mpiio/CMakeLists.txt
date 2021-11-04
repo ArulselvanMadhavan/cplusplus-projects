@@ -9,7 +9,7 @@ find_package(MPI REQUIRED)
 # set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH})
 # find_package(Vector)
 
-add_executable(mpi_io_block2d mpi_io_block2d.c malloc2D.c)
+add_executable(mpi_io_block2d mpi_io_block2d.c malloc2D.c mpi_io_file_ops.c)
 set_target_properties(mpi_io_block2d PROPERTIES INCLUDE_DIRECTORIES "${MPI_C_INCLUDE_PATH}")
 set_target_properties(mpi_io_block2d PROPERTIES COMPILE_FLAGS "${MPI_C_COMPILE_FLAGS}")
 set_target_properties(mpi_io_block2d PROPERTIES LINK_FLAGS "${MPI_C_LINK_FLAGS}")

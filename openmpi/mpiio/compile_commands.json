@@ -1,12 +1,17 @@
 [
 {
   "directory": "/home/arul/dev/cpp-projects/openmpi/mpiio/build",
-  "command": "/usr/bin/cc  -I/usr/include/x86_64-linux-gnu/mpich   -g   -std=gnu99 -o CMakeFiles/mpi_io_block2d.dir/mpi_io_block2d.c.o   -c /home/arul/dev/cpp-projects/openmpi/mpiio/mpi_io_block2d.c",
+  "command": "/usr/bin/cc  -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I/usr/lib/x86_64-linux-gnu/openmpi/include   -g   -pthread -std=gnu99 -o CMakeFiles/mpi_io_block2d.dir/mpi_io_block2d.c.o   -c /home/arul/dev/cpp-projects/openmpi/mpiio/mpi_io_block2d.c",
   "file": "/home/arul/dev/cpp-projects/openmpi/mpiio/mpi_io_block2d.c"
 },
 {
   "directory": "/home/arul/dev/cpp-projects/openmpi/mpiio/build",
-  "command": "/usr/bin/cc  -I/usr/include/x86_64-linux-gnu/mpich   -g   -std=gnu99 -o CMakeFiles/mpi_io_block2d.dir/malloc2D.c.o   -c /home/arul/dev/cpp-projects/openmpi/mpiio/malloc2D.c",
+  "command": "/usr/bin/cc  -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I/usr/lib/x86_64-linux-gnu/openmpi/include   -g   -pthread -std=gnu99 -o CMakeFiles/mpi_io_block2d.dir/malloc2D.c.o   -c /home/arul/dev/cpp-projects/openmpi/mpiio/malloc2D.c",
   "file": "/home/arul/dev/cpp-projects/openmpi/mpiio/malloc2D.c"
+},
+{
+  "directory": "/home/arul/dev/cpp-projects/openmpi/mpiio/build",
+  "command": "/usr/bin/cc  -I/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -I/usr/lib/x86_64-linux-gnu/openmpi/include   -g   -pthread -std=gnu99 -o CMakeFiles/mpi_io_block2d.dir/mpi_io_file_ops.c.o   -c /home/arul/dev/cpp-projects/openmpi/mpiio/mpi_io_file_ops.c",
+  "file": "/home/arul/dev/cpp-projects/openmpi/mpiio/mpi_io_file_ops.c"
 }
 ]

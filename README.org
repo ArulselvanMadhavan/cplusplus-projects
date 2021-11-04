@@ -16,3 +16,13 @@
    cmake -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Debug ../
    #+end_src
 
+** Install+Remove
+
+*** MPICH
+#+BEGIN_SRC bash
+sudo apt-get autoremove mpich
+#+END_SRC
+*** OpenMPI
+    #+BEGIN_SRC bash
+sudo apt remove openmpi-bin
+    #+END_SRC
