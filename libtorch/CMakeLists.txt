@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14 FATAL_ERROR)
 
 project(pytorch-cpp VERSION 1.0.0 LANGUAGES CXX)
-
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 option(DOWNLOAD_DATASETS "auto download datasets at build-time" ON)
@@ -35,14 +35,15 @@ target_link_libraries(${EXECUTABLE_NAME} ${TORCH_LIBRARIES})
 
 # add_subdirectory("utils/image_io")
 
-# if(DOWNLOAD_DATASETS)
-#   set(DATA_DIR ${CMAKE_CURRENT_SOURCE_DIR}/data CACHE PATH "Dataset download dir")
-#   file(MAKE_DIRECTORY ${DATA_DIR})
+if(DOWNLOAD_DATASETS)
+  message("Download datasets on")
+  set(DATA_DIR ${CMAKE_CURRENT_SOURCE_DIR}/data CACHE PATH "Dataset download dir")
+  file(MAKE_DIRECTORY ${DATA_DIR})
 
-#   add_custom_target(mnist COMMAND ${CMAKE_COMMAND}
-#     -D DATA_DIR=${DATA_DIR}
-#     -P ${CMAKE_CURRENT_SOURCE_DIR}/cmake/fetch_mnist.cmake)
-# endif()
+  add_custom_target(mnist COMMAND ${CMAKE_COMMAND}
+    -D DATA_DIR=${DATA_DIR}
+    -P ${CMAKE_CURRENT_SOURCE_DIR}/cmake/fetch_mnist.cmake)
+endif()
 
 add_subdirectory("tutorials/basics/pytorch_basics")
 add_custom_target(basics)

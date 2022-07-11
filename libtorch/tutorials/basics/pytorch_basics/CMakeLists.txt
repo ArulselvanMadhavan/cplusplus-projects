@@ -14,9 +14,10 @@ set_target_properties(${EXECUTABLE_NAME} PROPERTIES
   CXX_STANDARD_REQUIRED YES
   )
 
-# if(DOWNLOAD_DATASETS)
-#   add_dependencies(${EXECUTABLE_NAME} mnist)
-# endif()
+if(DOWNLOAD_DATASETS)
+  message("mnist download trigger")
+  add_dependencies(${EXECUTABLE_NAME} mnist)
+endif()
 
 add_custom_command(TARGET ${EXECUTABLE_NAME}
   POST_BUILD
