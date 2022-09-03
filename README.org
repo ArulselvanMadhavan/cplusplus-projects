@@ -26,3 +26,16 @@ sudo apt-get autoremove mpich
     #+BEGIN_SRC bash
 sudo apt remove openmpi-bin
     #+END_SRC
+* CMake
+*** List all cmake targets
+#+begin_src bash
+cmake --build . --target help
+#+end_src
+*** CMake system info
+#+begin_src bash
+cmake --system-information information.txt
+#+end_src
+*** Multiple configuration types
+#+begin_src bash
+CMAKE_CONFIGURATION_TYPES="Release;Debug"
+#+end_src
