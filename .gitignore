@@ -45,3 +45,9 @@ CMakeCache.txt
 
 **/.clangd/*
 **/.cache/*
+
+torchplay/libtorch
+torchplay/build
+torchplay/data
+torchplay/output
+torchplay/**/*.pt
