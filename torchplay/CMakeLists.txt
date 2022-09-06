@@ -40,6 +40,7 @@ endif()
 
 
 add_subdirectory("tutorials/basics/pytorch_basics")
+add_subdirectory("tutorials/basics/ffnn")
 add_custom_target(basics)
 add_dependencies(basics pytorch-basics)
 
