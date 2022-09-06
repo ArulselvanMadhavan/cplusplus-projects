@@ -27,8 +27,8 @@ set_target_properties(${EXECUTABLE_NAME} PROPERTIES
 
 target_link_libraries(${EXECUTABLE_NAME} ${TORCH_LIBRARIES})
 
-#add_subdirectory("extern")
-#add_subdirectory("utils/image_io")
+add_subdirectory("extern")
+add_subdirectory("utils/image_io")
 
 if(DOWNLOAD_DATASETS)
   set(DATA_DIR ${CMAKE_CURRENT_SOURCE_DIR}/data CACHE PATH "dataset download dir")
@@ -36,13 +36,20 @@ if(DOWNLOAD_DATASETS)
   add_custom_target(mnist COMMAND ${CMAKE_COMMAND}
     -D DATA_DIR=${DATA_DIR}
     -P ${CMAKE_CURRENT_SOURCE_DIR}/cmake/fetch_mnist.cmake)
+
+  add_custom_target(imagenette COMMAND ${CMAKE_COMMAND}
+    -D DATA_DIR=${DATA_DIR}
+    -P ${CMAKE_CURRENT_SOURCE_DIR}/cmake/fetch_imagenette.cmake)
 endif()
 
 
 add_subdirectory("tutorials/basics/pytorch_basics")
 add_subdirectory("tutorials/basics/ffnn")
 add_custom_target(basics)
-add_dependencies(basics pytorch-basics)
+add_dependencies(basics pytorch-basics ffnn)
 
+add_subdirectory("tutorials/intermediate/cnn")
+add_custom_target(intermediate)
+add_dependencies(intermediate cnn)
 
 
