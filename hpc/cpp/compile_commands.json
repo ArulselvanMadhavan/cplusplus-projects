@@ -1,0 +1,16 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "--std=c++17",
+      "-I/home/arul/dev/cppsources/cxxopts/include/",
+      "-o",
+      "cxxoptsplay.o",
+      "cxxoptsplay.cc"
+    ],
+    "directory": "/home/arul/dev/cplusplus-projects/hpc/cpp",
+    "file": "/home/arul/dev/cplusplus-projects/hpc/cpp/cxxoptsplay.cc",
+    "output": "/home/arul/dev/cplusplus-projects/hpc/cpp/cxxoptsplay.o"
+  }
+]

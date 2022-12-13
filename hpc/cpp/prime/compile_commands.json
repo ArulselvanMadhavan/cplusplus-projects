@@ -1,0 +1,16 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "--std=c++17",
+      "-I/home/arul/dev/cppsources/cxxopts/include/",
+      "-o",
+      "prime.o",
+      "prime.cc"
+    ],
+    "directory": "/home/arul/dev/cplusplus-projects/hpc/cpp/prime",
+    "file": "/home/arul/dev/cplusplus-projects/hpc/cpp/prime/prime.cc",
+    "output": "/home/arul/dev/cplusplus-projects/hpc/cpp/prime/prime.o"
+  }
+]
